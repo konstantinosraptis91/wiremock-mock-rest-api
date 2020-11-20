@@ -8,7 +8,6 @@ import java.time.Duration;
 
 /** @author Konstantinos Raptis [kraptis at unipi.gr] on 20/11/2020. */
 public class GetTaskImpl implements GetTask {
-  // , Callable<String> {
 
   @Override
   public String getData(String url) throws Exception {
@@ -19,7 +18,7 @@ public class GetTaskImpl implements GetTask {
         HttpRequest.newBuilder()
             .uri(URI.create(url))
             .timeout(Duration.ofSeconds(30))
-            .header("Content-type", "application/json")
+            .header("Accept", "application/json")
             .GET()
             .build();
 

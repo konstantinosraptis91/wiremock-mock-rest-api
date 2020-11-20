@@ -33,7 +33,7 @@ public class GetTaskTest {
 
     stubFor(
         get(urlEqualTo("/all_cars"))
-            .withHeader("Content-Type", equalTo("application/json"))
+            .withHeader("Accept", equalTo("application/json"))
             .willReturn(
                 aResponse()
                     .withStatus(200)

@@ -14,6 +14,5 @@ dependencies {
 
     implementation("com.google.code.gson:gson:2.8.6")
     testImplementation("org.slf4j:slf4j-simple:1.7.30")
-    implementation("org.igniterealtime.smack:smack-core:4.3.5")
     testImplementation("com.github.tomakehurst:wiremock:2.27.2")
 }
